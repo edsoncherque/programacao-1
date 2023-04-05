@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form>
+        <fieldset>
+            <legend>Dados iniciais</legend>
+            <input type="text" name="nome"
+                placeholder="Digite seu nome:"
+                size="50"
+                maxlength="300"
+            >
+            <br><br>
+            <label>
+                Data de nascimento:
+                <input type="date" name="data_de_nascimento">
+            </label>
+        </fieldset>
+        <fieldset style="background-color: honeydew;">
+            <legend>Informações academicas</legend>
+            <label for="ensm">Ensimo médio?</label>
+            <input type="checkbox" id="ensm" name="ensm">
+            <br>
+            <label for="nsup">Nível superior?</label>
+            <input type="checkbox" id="nsup" name="nsup">
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    <p><a href="../index.html">Voltar</a></p>    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario com tabela</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Meu primeiro formulario com tabela</h1>
+    <form>
+        <table style="border: 1px; width: 70%; margin: 0 auto;" >
+            <tr>
+                <td style="text-align: right;">Nome:</td>
+                <td>
+                    <input type="eds" name="nome"
+                        placeholder="nome"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">E-mail:</td>
+                <td>
+                    <input type="email" name="email"
+                        placeholder="Digite seu email:"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Telefone:</td>
+                <td>
+                    <input type="tel" name="fone"
+                        placeholder="Digite seu telefone:"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td style="text-align: right;">Salario:</td>
+                <td>
+                    <input type="number" name="slario"
+                        step="0.05" min="0" max="100000"
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </td>
+            </tr>      
+        </table>
+    </form>
+    <p><a href="../index.html">Voltar</a></p>  
+</body>
+</html>
