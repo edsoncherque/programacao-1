@@ -7,54 +7,182 @@
     <title>Formulário de Inscrição em evento</title>
 </head>
 <body>
-    <h1 style="text-align: center;">Formulário de Inscrição em evento</h1>
-    <form>
-        <fieldset>
+    <fieldset style = "width: 50%; margin: 0px auto;">
+        <h1 style="text-align: justify;">Formulário de Inscrição em evento</h1>
+        <form>
+            <fieldset>
+                <br>
+                <table style="width: 60%; margin: 0px auto;">
+                    <tr>
+                        <td>
+                            <label>Nome completo:</label>
+                        </td>
+                        <td>
+                            <input
+                                type="text" name="nome"
+                                size="50"
+                                maxlength="300"
+                                required
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Email:</label>
+                        </td>
+                        <td>
+                            <input
+                                type="email" name="email"
+                                placeholder="ex: myname@exemple.com"
+                                size="50"
+                                maxlength="300"
+                                required
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Sexo:</label>
+                        </td>
+                        <td>
+                            <input type="radio" name="radio" value="Masculino" required>Masculino
+                            &nbsp;&nbsp;
+                            <input type="radio" name="radio" value="Feminino" required>Feminino
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Cargo:</label>
+                        </td>
+                        <td>
+                            <input
+                                type="text" name="cargo"
+                                size="50"
+                                maxlength="300"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Nascimento:</label>
+                        </td>
+                        <td>
+                            <input type="date" name="data"
+                                size="50"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Telefone:</label>
+                        </td>
+                        <td>
+                            <input
+                                type="tel" name="fone"
+                                size="50"
+                                maxlength="300"
+                            >
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <h2 style="text-align: justify;">Informações da Instituição</h2>
+            <h4 style="text-align: justify;">Preencha os comapos abaixo com as informações da empresa em que trabalha.</h4>
+            <fieldset>
+                <table style="width: 60%; margin: 0px auto;">
+                    <tr>
+                        <td>
+                            <label>Empresa:</label>
+                        </td>
+                        <td>
+                            <input 
+                                type="text" name="empresa"
+                                size="50"
+                                maxlength="500"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Endereço Completo:</label>
+                        </td>
+                        <td>
+                            <input
+                                type="text" name="endereco-completo"
+                                size="50"
+                                maxlength="500"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Cidade:</label>
+                        </td>
+                        <td>
+                            <input 
+                                type="text" name="cidade"
+                                size="50"
+                                maxlength="500"
+                            >
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Estado:</label>
+                        </td>
+                        <td>
+                            <select name="estado">
+                                <option selected value="selecione">selecione</option>
+                                <option value="ac">Acre</option>
+                                <option value="al">Alagoas</option>
+                                <option value="ap">Amapá</option>
+                                <option value="am">Amazonas</option>                     
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Quant. Funcionários:</label>
+                        </td>
+                        <td>
+                            <input 
+                                type="text" name="qtdo-funcionarios"
+                                size="30"
+                                maxlength="500"                   
+                            > 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Observações:</label>
+                        </td>
+                        <td>
+                            <textarea name="observações" cols="50" rows="5"></textarea>                           
+                        </td>
+                    </tr>
+                </table>          
+            </fieldset>
             <br>
-            <label>
-                Nome completo:      
-                <input type="text" name="nome"
-                    size="70"
-                    maxlength="500"
-                    required
-                >
-            </label>
-            <br><br>
-            <label>
-                Email:
-                <input type="email" name="email"
-                placeholder="ex: myname@exemple.com"
-                required
-                >
-            </label>
-            <br><br>
-            <label>
-                Sexo:
-                <input type="radio" name="radio" value="Masculino" required>Masculino
-                &nbsp;&nbsp;
-                <input type="radio" name="radio" value="Feminino" required>Feminino
-            </label>
-            <br><br>
-            <label>
-                Cargo:
-                <input type="text" name="cargo"
-                    size="70"
-                    maxlength="500"
-                >
-            </label>
-            <br><br>
-            <label>
-                Nascimento:
-                <input type="date" name="data">
-            </label>
-            <br><br>
-            <label>
-                Telefone:
-                <input type="tel" name="fone">
-            </label>
-        </fieldset>    
-        <h2 style="text-align: center;">Informações da Instituição</h2>
-        <p><a href="../index.html" style="text-align: right;">Voltar</a></p>    
-    </form>  
+            <table style="width: 60%; margin: 0px auto;">
+                <tr>
+                    <td>
+                        <label>Recibo:</label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="emitir-instituição">Emitir em nome da intituição.
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label style="text-align: center;">
+                            <input type="submit" value="Fazer Inscrição">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <p><a href="../index.html" style="width: 50%; margin: 0px auto;">Voltar</a></p>
+    </fieldset>
+    
 </body>
 </html>
