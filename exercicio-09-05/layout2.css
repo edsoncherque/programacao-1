@@ -8,22 +8,21 @@ html, body {
 .logo { grid-area: logo }
 .nav { grid-area: nav }
 .header { grid-area: header }
-.side { grid-area: side }
-.body { grid-area: body }
+.intro { grid-area: intro }
+.box1 { grid-area: box1 }
+.box2 { grid-area: box2 }
+.box3 { grid-area: box3 }
 .foot { grid-area: footer }
 
 .container-grid {
     display: grid;
     grid-template-areas: 
-        'logo   logo    logo    logo    logo    logo'
-        'nav    nav     nav     nav     nav     nav'
+        'logo   logo    nav    nav     nav     nav'
         'header header  header  header  header  header'
-        'side   side    body    body    body    body'
-        'side   side    body    body    body    body'
-        'side   side    body    body    body    body'
-        'footer  footer  footer  footer  footer  footer'
+        'intro  intro   intro   intro   intro   intro'
+        'box1   box1    box2    box2    box3    box3'
+        'footer footer  footer  footer  footer  footer'
         ;
-    grid-gap: 15px;
     padding-top: 20px;
     padding-bottom: 15px;
     padding-left: 100px;
@@ -42,40 +41,47 @@ html, body {
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 15px;
+    margin-bottom: 15px;
 }
 
 .nav { 
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    text-align: right;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
 }
 
 .header { 
     text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-bottom: 15px;
 }
 
-.side { 
+.intro { 
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 5px;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 
-.body { 
+.box { 
     text-align: center;
     font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
     height: 520px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
+}
+
+.box2 {
+    margin-right: 30px;
+    margin-left: 30px;
 }
 
 .foot { 
