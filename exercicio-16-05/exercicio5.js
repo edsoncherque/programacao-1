@@ -3,7 +3,7 @@
 
 var horas = parseInt(prompt('Informe a quandidade de horas: '));
 var minutos = parseInt(prompt('Informe a quantidade de minutos: '));
-var horas_em_minutos = (horas / 60);
+var horas_em_minutos = (horas * 60);
 var minutos_totais = (horas_em_minutos + minutos);
 
-document.write(horas + ' horas equivalem a ' + minutos_totais + ' minutos');
+document.write(horas + ' horas e ' + minutos + ' minutos equivalem a ' + minutos_totais + ' minutos');
