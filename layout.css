@@ -33,6 +33,7 @@ html, body {
     text-align: center;
     box-sizing: border-box;
     border-radius: 0 0 30px 30px;
+    height: 30px;
 }
 
 #div1 {

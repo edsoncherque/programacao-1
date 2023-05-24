@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula dia 23/05/2023</title>
+</head>
+<body>
+    <div class="container">
+        <label for="numero1">Número 1</label>
+        <input type="number" id="numero1" step="1" min="0">
+        <span id="mens"></span><br>       
+        <label for="numero2">Número 2</label>
+        <input type="number" id="numero2" step="1" min="0">
+        <span id="mens2"></span><br>
+        Resultado: <input type="text" readonly id="result"><br>
+        <button id="botao" onclick="soma()">Soma</button>
+    </div>
+    <script>
+        function soma() {
+            var cxNum1 = document.getElementById("numero1").value;
+            var cxNum2 = document.querySelector("#numero2").value;
+
+            var num1 = eval(cxNum1);
+            var num2 = eval(cxNum2);
+
+            //alert(num1);
+            //alert(num2);
+
+            var mensagem = document.getElementById("mens");
+            var mensagem2 = document.getElementById("mens2");
+
+            if(isNaN(num1)) {
+                mensagem.innerHTML = "Valor inválido";
+                mensagem.style.border = "1px dotted reSd";
+                mensagem.style.color = "red";
+                return false;
+            } else {
+                mensagem.innerHTML = "";
+                mensagem.style.border = "none";
+                mensagem.style.color = "black";
+            }
+            if(isNaN(num2)) {    
+                mensagem2.innerHTML = "Valor inválido";
+                mensagem2.style.border = "1px dotted red";
+                mensagem2.style.color = "red";
+                return false;
+            } else {
+                mensagem2.innerHTML = "";
+                mensagem2.style.border = "none";
+                mensagem2.style.color = "black";
+            }
+            document.querySelector("#result").value = num1 + num2;
+        }
+    </script>
+</body>
+</html>
