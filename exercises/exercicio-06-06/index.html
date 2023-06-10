@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Javascript 06/06/2023</title>
+</head>
+<body>
+    <h1 id="title">Exercícios com Javascript</h1>
+    <script>
+        let title = document.getElementById('title');
+        title.style = 'border: 3px dotted red; font-size: 40px;'
+        title.style.backgroundColor = 'grey';
+    </script>
+    <fieldset>
+        <legend>Exercicio 1</legend>
+        <label>Calculadora de cubo:<br>
+            <textarea id="msg" name="msg"></textarea>
+        </label>
+        <br>
+        <p><span id="result">O resultado do cubo é: </span></p>
+    </fieldset>
+    <script>
+        clear = result.innerHTML;
+        msg.onchange = function() {
+            result.innerHTML = clear;
+            var valor = parseInt(this.value);
+            valor = valor * valor * valor;
+            result.innerHTML += valor;
+        };
+    </script>
+    </script>
+</body>
+</html>

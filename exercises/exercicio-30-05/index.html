@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Javascript 30/05/2023</title>
+</head>
+<body>
+    <h1 id="title">Exercícios com Javascript</h1>
+    <p id="result"></p>
+    <script>
+        let title = document.getElementById('title');
+        title.style = 'border: 3px dotted red; font-size: 40px;'
+        title.style.backgroundColor = 'grey';
+    </script>
+    <fieldset>
+        <legend>Exercicio 1</legend>
+        <label for="num1">Digite um valor:</label>
+        <input type="number" id="num1" step="0.1" min="0"><br>
+        <input type="button" id="botao" value="OK">    
+    </fieldset>
+    <script>
+        let txtnum1 = document.querySelector('#num1');
+        botao.onclick = function(){
+            // necessário converter para float com parseFloat
+            if(parseInt(txtnum1.value) > 30){
+                var txtnum1new = txtnum1.value / 2;
+                result.innerHTML = txtnum1new;
+            } else {
+                var txtnum2new = txtnum1.value * 2;
+                result.innerHTML = txtnum2new;
+            }
+        };
+    </script>
+    </script>
+</body>
+</html>
+
+
