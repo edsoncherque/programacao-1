@@ -4,65 +4,9 @@ html, body {
     padding: 0;
 }
 
-.logo { grid-area: logo }
-.nav { grid-area: nav }
-.header { grid-area: header }
-.side { grid-area: side }
-.body { grid-area: body }
-.foot { grid-area: footer }
-
-.container-grid {
-    display: grid;
-    grid-template-areas: 
-        'logo   logo    logo    logo    logo    logo'
-        'nav    nav     nav     nav     nav     nav'
-        'header header  header  header  header  header'
-        'side   side    body    body    body    body'
-        'side   side    body    body    body    body'
-        'side   side    body    body    body    body'
-        'footer  footer  footer  footer  footer  footer'
-        ;
-    grid-gap: 5px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.logo {
+    height: 50vh; /* Altura de 40% da altura da janela de visualização */
     background-color: #212A3E;
 }
 
-.int {
-    font-family: Arial, Helvetica, sans-serif;  
-}
 
-.logo { 
-    border-bottom: 3px solid #394867;
-    height: 70px;
-}
-
-.nav { 
-    border-bottom: 3px solid #394867;
-    height: 50px;
-}
-
-.header { 
-    border-bottom: 3px solid #394867;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.side { 
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.body { 
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    height: 300px;
-}
-
-.foot { 
-    border-top: 3px solid #394867;
-    height: 90px;
-}
