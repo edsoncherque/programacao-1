@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Javascript 30/05/2023</title>
+</head>
+<body>
+    <h1 id="title">Exercícios com Javascript</h1>
+    <p id="result"></p>
+    <script>
+        let title = document.getElementById('title');
+        title.style = 'border: 3px dotted red; font-size: 40px;'
+        title.style.backgroundColor = 'grey';
+    </script>
+    <fieldset>
+        <legend>Exercicio 2</legend>
+        <!-- Ler dois números e imprimir se o primeiro é maior que o segundo. -->
+        <label for="num1">Digitre um numero: </label>
+        <input type="number" id="num1" step="0.1" min="0">
+        <br><br>
+        <label for="num2">Digitre outro numero: </label>
+        <input type="number" id="num2" step="0.1" min="0">
+        <br><br>
+        <input type="button" id="botao" value="OK">
+    </fieldset>
+    <script>
+        let result = document.querySelector('#result');
+        let botao = document.querySelector('#botao');
+        botao.onclick = function(){
+            let txtnum1 = document.querySelector('#num1');
+            let txtnum2 = document.querySelector('#num2');
+            if(parseInt(txtnum1.value) > parseInt(txtnum2.value)){
+                result.innerHTML = 'O primeiro numero é maior que o segundo';
+            } else {
+                result.innerHTML = 'O segundo numero é maior que o primeiro';
+            }
+        };
+    </script>
+    </script>
+</body>
+</html>
+
+

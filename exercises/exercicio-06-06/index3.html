@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Javascript 06/06/2023</title>
+</head>
+<body>
+    <h1 id="title">Exercícios com Javascript</h1>
+    <script>
+        let title = document.getElementById('title');
+        title.style = 'border: 3px dotted red; font-size: 40px;'
+        title.style.backgroundColor = 'grey';
+    </script>
+    <fieldset>
+        <legend>Exercicio 3</legend>
+        <!-- 3. Crie uma página web que contenha uma caixa de texto que quando o usuário digitar alguma coisa 1
+            converta o seu conteúdo para letras maiúsculas, e informe, em um span quantos caracteres foram digitados.
+            Dicas: utilizar o evento onkeyup. Para converter para maiúsculas texto.toUpperCase()  -->
+        <label>Convertendo para maiúsculas:<br>
+            <input type="text" id="msg" name="msg">
+            <br><br>
+            <input type="button" id="botao" value="OK">
+        </label>
+        <br>
+        <p><span id="result">Resultado da conversão para maiuscula: </span></p>
+        <p><span id="cont">Quantidade de caracteres digitados:</span></p>
+    </fieldset>
+    <script>
+        botao.onclick = function() {
+            var msg = document.getElementById('msg').value;
+            var result = document.getElementById('result');
+            var cont = document.getElementById('cont');
+            result.innerHTML = 'Resultado da conversão para maiuscula: ' + msg.toUpperCase();
+            cont.innerHTML = 'Quantidade de caracteres digitados: ' + msg.length;
+        };
+    </script>
+</body>
+</html>

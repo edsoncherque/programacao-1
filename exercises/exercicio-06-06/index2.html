@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Javascript 06/06/2023</title>
+</head>
+<body>
+    <h1 id="title">Exercícios com Javascript</h1>
+    <script>
+        let title = document.getElementById('title');
+        title.style = 'border: 3px dotted red; font-size: 40px;'
+        title.style.backgroundColor = 'grey';
+    </script>
+    <fieldset>
+        <legend>Exercicio 2</legend>
+        <!-- 2. Crie uma página web com três caixas de texto (<input type='number'>) onde serão informados os valores,
+            em seguida crie um botão que ao ser clicado chame uma função, que receba estes três números e verifique o maior dos três números dados
+            e mostre uma mensagem, em um parágrafo, informando o resultado para o usuário. -->
+        <label>Checando maior valor:<br>
+            <input type="number" id="num1" step="0.1" min="0">
+            <br><br>
+            <input type="number" id="num2" step="0.1" min="0">
+            <br><br>
+            <input type="number" id="num3" step="0.1" min="0">
+            <br><br>
+            <input type="button" id="botao" value="OK">
+        </label>
+        <br>
+        <p id="result"></p>
+    </fieldset>
+    <script>
+        botao.onclick = function() {
+            var num1 = parseFloat(document.getElementById('num1').value);
+            var num2 = parseFloat(document.getElementById('num2').value);
+            var num3 = parseFloat(document.getElementById('num3').value);
+            var result = document.getElementById('result');
+            if (num1 > num2 && num1 > num3) {
+                result.innerHTML = 'O maior número é: ' + num1;
+            } else if (num2 > num1 && num2 > num3) {
+                result.innerHTML = 'O maior número é: ' + num2;
+            } else if (num3 > num1 && num3 > num2) {
+                result.innerHTML = 'O maior número é: ' + num3;
+            } else {
+                result.innerHTML = 'Os números são iguais';
+            }
+        };
+    </script>
+</body>
+</html>
