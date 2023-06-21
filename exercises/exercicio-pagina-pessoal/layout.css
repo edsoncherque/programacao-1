@@ -2,11 +2,61 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-.logo {
-    height: 50vh; /* Altura de 40% da altura da janela de visualização */
+#logo {
+    height: 40vh; /* Altura de 15% da altura da janela de visualização */
     background-color: #212A3E;
+    color: #fff;
+    text-align: center;
 }
 
+#title {
+    margin: 0;
+    padding: 0;
+    line-height: 15vh; /* Centraliza verticalmente o texto */
+    text-align: right;
+ 
+}
 
+#profile_picture {
+    margin: 0;
+    padding: 0;
+    line-height: 15vh; /* Centraliza verticalmente o texto */
+    text-align: left;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+footer {
+    background-color: #212A3E;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Estilos para os botões */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6d80af;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+    margin-inline: 5px;
+    }
+
+.button:hover {
+    background-color: #888d9b;
+}
