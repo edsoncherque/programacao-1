@@ -5,31 +5,111 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="layout.css">
-    <title>Pagina pessoal de Edson Cherque</title>
+    <title>Portifólio Edson Cherque</title>
 </head>
 <body>
-    <div id="principal">
-        <div class="principal" id="header">Pagina pessoal de Edson Cherque</div>
-        <div id="div1" class="internal">
-            <h2>Disciplina de Programação I - IFRO Campus Ariquemes - 2023</h2>
-            <p>&nbsp;</p>
-            <p>Esta é minha página de apresetação de conteudos da matéria de Programção I, estudados no ano de 2023-1.</p>
-            <img src="https://media.licdn.com/dms/image/C4D03AQHZprFJFgkXOw/profile-displayphoto-shrink_200_200/0/1571450803935?e=1689811200&v=beta&t=DWEig4IwZMsQkpk466SyntzBnflzqOw7z5EDB0INZuE" alt="me">
-            <p>&nbsp;</p>
-            <p>Meu nome é Edson Cherque, sou estudante de ADS no IFRO Campus Ariquemes e está é minha primeira página web.</p>
-            <h2>Tabela de conhecimento</h2>
-            <p><a href="exemples/ariquemes.html">Ariquemes</a></p>
-            <p><a href="exemples/listas.html">Listas</a></p>
-            <p><a href="exemples/midias.html">Midias</a></p>
-            <p><a href="exemples/tabela.html">Tabela 1</a></p>
-            <p><a href="exemples/tabela2.html">Tabela 2</a></p>
-            <p><a href="exemples/formulario.html">Formulário 1</a></p>
-            <p><a href="exemples/formulario2.html">Formulário 2</a></p>
-            <p><a href="exemples/formulario3.html">Formulário 3</a></p>
-            <p><a href="aulas/aula-25-04/exemplo2.html">Aula dia 25/04</a></p>
-            <p><a href="exercicio-pagina-pessoal/index.html">Pagina pessoal em construção</a></p>
+    <div class="container">
+        <div class="header" id="header">
+            <a href="#inicio" class="button">Início</a>
+            <a href="#sobre" class="button">Sobre </a>
+            <a href="#habilidades" class="button">Habilidades</a>
+            <a href="#projetos" class="button">Projetos</a>
+            <a href="#contato" class="button">Contato</a>
+            <div class="logo" id="title">
+                <h1>Bem vindo ao meu portifólio</h1>
+            </div>
         </div>
-        <div id="rodape">Ifro Campus Ariquemes<p>Todos os diretos reservados</p><p>2023</p></div>
-    </div>
+        
+        <section id="sobre">
+          <h2>Sobre Mim</h2>
+          <p>Olá, seja bem vindo ao meu portifólio. Meu nome é Edson Cherque,
+             tenho 29 anos e sou estudante de Análise e Desenvolvimento de Sistemas no IFRO Campus Ariquemes.<br>
+             Também sou graduado em Redes de Computadores pela Uniesp Faculdade Policamp, concluído em 2016.<br>
+             Atualmente trabalho no Venturus (Instituto de Inovação e Tecnologia) como Analista DevOps Pleno.</p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+              <li>DevOps</li>
+              <li>Docker</li>
+              <li>Git</li>
+              <li>Linux</li>
+              <br>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <br>
+            </ul>
+          </section>
+
+          <section id="projetos">
+            <h2>Projetos e Atividades</h2>
+            <ul>
+              <li><a href="exemples/ariquemes.html">Ariquemes</a></li>
+              <li><a href="exemples/listas.html">Listas</a></li> 
+              <li><a href="exemples/midias.html">Midias</a></li>
+              <li><a href="exemples/tabela.html">Tabela 1</a></li>
+              <li><a href="exemples/tabela2.html">Tabela 2</a></li>
+              <li><a href="exemples/formulario.html">Formulário 1</a></li>
+              <li><a href="exemples/formulario2.html">Formulário 2</a></li>
+              <li><a href="exemples/formulario3.html">Formulário 3</a></li>
+              <li><a href="aulas/aula-25-04/exemplo2.html">Aula dia 25/04</a></li>
+              <li><a href="exercises/pagina-pessoal-v1/index.html">Pagina pessoal V1</a></li>
+            </ul>
+          </section>
+
+          <section id="contato">
+            <h2>Contato</h2>
+            <p>Email: edsoncherque@estudante.ifro.edu.br / edsoncherque@outlook.com</p>
+            <p>Telefone: (69) 999021274</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/edson-cherque/">Edson Cherque</a></p>
+          </section>          
+       </div>
+    <a href="#" class="voltar-ao-topo" id="profile_picture">
+      <img src="edson-cherque.jpeg" alt="Voltar ao Início" id="profile_picture_redm">
+    </a>   
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        var botaoSobre = document.querySelector("a[href='#sobre']");
+        var secaoSobre = document.getElementById("sobre");
+
+        botaoSobre.addEventListener("click", function(event) {
+          event.preventDefault();
+          secaoSobre.scrollIntoView({ behavior: "smooth" });
+        });
+
+        var botaoHabilidades = document.querySelector("a[href='#habilidades']");
+        var secaoHabilidades = document.getElementById("habilidades");
+
+        botaoHabilidades.addEventListener("click", function(event) {
+          event.preventDefault();
+          secaoHabilidades.scrollIntoView({ behavior: "smooth" });
+        });
+
+        var botaoContato = document.querySelector("a[href='#contato']");
+        var secaoContato = document.getElementById("contato");
+
+        botaoContato.addEventListener("click", function(event) {
+          event.preventDefault();
+          secaoContato.scrollIntoView({ behavior: "smooth" });
+        });
+        
+        var botaoVoltarAoTopo = document.querySelector(".voltar-ao-topo");
+
+        botaoVoltarAoTopo.addEventListener("click", function(event) {
+          event.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        });      
+      });
+    </script>
 </body>
+<footer>
+    <div class="container">
+        <div class="footer">
+          <p>&copy; Portifólio Edson Cherque | 2023</p>
+        </div>
+    </div>
+  </footer>
 </html>
