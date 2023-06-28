@@ -6,19 +6,19 @@ Description: Layout CSS for personal page
 
 /* Cleaning default formats */
 html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    min-height: 100%; /* tamanho da tela */
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
+  min-height: 100%; /* tamanho da tela */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
 .container {
@@ -27,53 +27,52 @@ body {
 }
 
 #header {
-    height: 15%;
-    background-color: #212A3E;
-    color: #fff;
-    text-align: center;
+  height: 15%;
+  background-color: #212A3E;
+  color: #fff;
+  text-align: center;
 }
 
 #title {
-    margin: 0;
-    padding: 0;
-    margin-right: 40px;
-    line-height: 15vh;
-    text-align: right;
+  margin: 0;
+  padding: 0;
+  margin-right: 40px;
+  line-height: 15vh;
+  text-align: right;
 }
 
 #profile_picture {
-    margin: 40px;
-    padding: 0;
-    width: 250px;
-    height: 250px;
-    text-align: left;
-    border-radius: 50%;
-    overflow: hidden;
-    
+  margin: 40px;
+  padding: 0;
+  width: 250px;
+  height: 250px;
+  text-align: left;
+  border-radius: 50%;
+  overflow: hidden;  
 }
 
 footer {
-    background-color: #212A3E;
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    margin-top: auto;
+  background-color: #212A3E;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
 }
 
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #6d80af;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-    margin-top: 15px;
-    margin-inline: 5px;
-    }
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6d80af;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+  margin-inline: 5px;  
+}
 
 .button:hover {
-    background-color: #888d9b;
+  background-color: #888d9b;
 }
 
 .voltar-ao-topo {
@@ -119,7 +118,7 @@ section ul {
 /* Estilos para telas de smartphone */
 @media (max-width: 767px) {
   body {
-      font-size: 14px;
+    font-size: 14px;
   }
   
   #profile_picture {
@@ -136,13 +135,13 @@ section ul {
   }
   
   #title {
-      margin-right: 20px;
-      line-height: 7.5vh;
-      text-align: center;
+    margin-right: 20px;
+    line-height: 7.5vh;
+    text-align: center;
   }
   
   .voltar-ao-topo {
-      bottom: 10px;
-      right: 10px;
+    bottom: 10px;
+    right: 10px;
   }
 }
